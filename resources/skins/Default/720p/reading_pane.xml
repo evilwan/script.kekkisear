@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window id="3001">
+  <animation effect="fade" time="350">WindowOpen</animation>
+  <animation effect="fade" time="350">WindowClose</animation>
+  <zorder>1</zorder>
+  <defaultcontrol>200</defaultcontrol>
+
+  <controls>
+    <control type="image" id="100">
+      <description>Background</description>
+      <width>1280</width>
+      <height>720</height>
+      <visible>true</visible>
+      <texture>paper-pixel.png</texture>
+    </control>
+
+    <control type="label" id="201">
+      <description>Window Title</description>
+      <posx>500</posx> <!-- window width / 2 - label width / 2 -->
+      <posy>5</posy>
+      <width>800</width>
+      <height>20</height>
+      <aligny>center</aligny>
+	  <textcolor>ff000000</textcolor>		<!-- black -->
+	  <label>[B]Geronimo!!![/B]</label>
+    </control>
+
+    <control type="textbox" id="200">
+      <description>Chapter Contents</description>
+      <posx>20</posx>
+      <posy>70</posy>
+      <width>1200</width>
+      <height>560</height>
+      <align>left</align>
+	  <visible>True</visible>
+      <textcolor>ff000000</textcolor>
+	  <label></label>
+      <pagecontrol>300</pagecontrol>
+	  <scrolltime>200</scrolltime>
+	  <autoscroll delay="3000" time="1000" repeat="10000">!Control.HasFocus(13)</autoscroll>
+    </control>
+
+    <control type="scrollbar" id="300">
+      <description>Scrollbar for Reader</description>
+      <posx>1240</posx>
+      <posy>60</posy>
+      <width>25</width>
+      <height>580</height>
+      <pulseonselect>True</pulseonselect>
+      <orientation>vertical</orientation>
+      <showonepage>true</showonepage>
+      <onleft>302</onleft>
+      <onright>301</onright>
+    </control>
+
+    <control type="button" id="301">
+      <description>Previous Page Button</description>
+      <posx>20</posx>
+      <posy>65r</posy>
+      <width>50</width>
+      <height>40</height>
+      <align>center</align>
+      <label>&lt;</label>
+      <texturenofocus border="5">button-pixel.png</texturenofocus>
+      <texturefocus border="5">button-selected-pixel.png</texturefocus>
+	  <textcolor>ff000000</textcolor>
+      <onright>303</onright>
+      <onleft>300</onleft>
+	  <!--
+      <onright>301</onright>
+      <onleft>203</onleft>
+      <onup>203</onup>
+      <ondown>203</ondown>
+	  -->
+    </control>
+
+    <control type="button" id="303">
+      <description>Table Of Contents Button</description>
+      <posx>166</posx>
+      <posy>65r</posy>
+      <width>200</width>
+      <height>40</height>
+      <align>center</align>
+      <label>$ADDON[script.kekkisear 32002]</label>
+      <texturenofocus border="5">button-pixel.png</texturenofocus>
+      <texturefocus border="5">button-selected-pixel.png</texturefocus>
+	  <textcolor>ff000000</textcolor>
+      <onright>305</onright>
+      <onleft>301</onleft>
+	  <!--
+      <onright>302</onright>
+      <onleft>305</onleft>
+      <onup>203</onup>
+      <ondown>203</ondown>
+	  -->
+    </control>
+
+    <control type="button" id="305">
+      <description>Stop/start scroll Button</description>
+      <posx>462</posx>
+      <posy>65r</posy>
+      <width>50</width>
+      <height>40</height>
+      <align>center</align>
+      <label>-</label>
+      <texturenofocus border="5">button-pixel.png</texturenofocus>
+      <texturefocus border="5">button-selected-pixel.png</texturefocus>
+	  <textcolor>ff000000</textcolor>
+      <onright>306</onright>
+      <onleft>303</onleft>
+	  <!--
+      <onright>302</onright>
+      <onleft>305</onleft>
+      <onup>203</onup>
+      <ondown>203</ondown>
+	  -->
+    </control>
+
+    <control type="button" id="306">
+      <description>Stop/start scroll Button</description>
+      <posx>512</posx>
+      <posy>65r</posy>
+      <width>50</width>
+      <height>40</height>
+      <align>center</align>
+      <label>+</label>
+      <texturenofocus border="5">button-pixel.png</texturenofocus>
+      <texturefocus border="5">button-selected-pixel.png</texturefocus>
+	  <textcolor>ff000000</textcolor>
+      <onright>304</onright>
+      <onleft>305</onleft>
+	  <!--
+      <onright>302</onright>
+      <onleft>305</onleft>
+      <onup>203</onup>
+      <ondown>203</ondown>
+	  -->
+    </control>
+
+	<control type="button" id="307">
+      <description>Library Button</description>
+      <posx>658</posx>
+      <posy>65r</posy>
+      <width>150</width>
+      <height>40</height>
+      <align>center</align>
+      <label>$ADDON[script.kekkisear 32005]</label>
+      <texturenofocus border="5">button-pixel.png</texturenofocus>
+      <texturefocus border="5">button-selected-pixel.png</texturefocus>
+	  <textcolor>ff000000</textcolor>
+      <onright>302</onright>
+      <onleft>306</onleft>
+	  <!--
+      <onright>304</onright>
+      <onleft>301</onleft>
+      <onup>203</onup>
+      <ondown>203</ondown>
+	  -->
+    </control>
+
+	<control type="button" id="304">
+      <description>Exit Button</description>
+      <posx>904</posx>
+      <posy>65r</posy>
+      <width>150</width>
+      <height>40</height>
+      <align>center</align>
+      <label>$ADDON[script.kekkisear 32003]</label>
+      <texturenofocus border="5">button-pixel.png</texturenofocus>
+      <texturefocus border="5">button-selected-pixel.png</texturefocus>
+	  <textcolor>ff000000</textcolor>
+      <onright>302</onright>
+      <onleft>306</onleft>
+	  <!--
+      <onright>304</onright>
+      <onleft>301</onleft>
+      <onup>203</onup>
+      <ondown>203</ondown>
+	  -->
+    </control>
+
+    <control type="button" id="302">
+      <description>Next Page Button</description>
+      <posx>1150</posx>
+      <posy>65r</posy>
+      <width>50</width>
+      <height>40</height>
+      <align>center</align>
+      <label>&gt;</label>
+      <texturenofocus border="5">button-pixel.png</texturenofocus>
+      <texturefocus border="5">button-selected-pixel.png</texturefocus>
+	  <textcolor>ff000000</textcolor>
+      <onright>300</onright>
+      <onleft>304</onleft>
+	  <!--
+      <onright>203</onright>
+      <onleft>302</onleft>
+      <onup>203</onup>
+      <ondown>203</ondown>
+	  -->
+    </control>
+
+  </controls>
+</window>
+<!--
+[20 - 1220]
+
+    [20 - 70]
+    <control type="button" id="301">
+      <description>Previous Page Button</description>
+      <posx>20</posx> <width>50</width>
+
+    [ 1080 width between outer buttons ==> 270 width for each ]
+    [ 5 whitespaces between buttons ]
+    [ sum widths = 600 ; total whitespace = 480 ; 96 width per whitespace ]
+
+    [166 - 366]
+    <control type="button" id="303">
+      <description>Table Of Contents Button</description>
+      <posx>240</posx> <width>200</width>
+
+    [462 - 512]
+    <control type="button" id="305">
+      <description>Stop/start scroll Button</description>
+      <posx>570</posx> <width>50</width>
+    [512 - 562]
+    <control type="button" id="306">
+      <description>Stop/start scroll Button</description>
+      <posx>620</posx> <width>50</width>
+
+   [658 - 808]
+	<control type="button" id="307">
+      <description>Library Button</description>
+      <posx>810</posx> <width>150</width>
+
+    [904 - 1054]
+	<control type="button" id="304">
+      <description>Exit Button</description>
+      <posx>810</posx> <width>150</width>
+
+    [1150 - 1200]
+    <control type="button" id="302">
+      <description>Next Page Button</description>
+      <posx>1150</posx> <width>50</width>
+-->

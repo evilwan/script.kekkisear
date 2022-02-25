@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings version="1">
+  <section id="script.kekkisear">
+	<category id="general" label="" help="">
+      <group id="stuff" label="">
+        <!-- <setting id="snafu" type="string" label="32001" help=""> -->
+	<!--       <level>0</level> -->
+	<!--       <default>System not available: situation normal...</default> -->
+	<!--       <control type="edit" format="string"> -->
+	<!-- 	    <heading>No woman, no cry.</heading> -->
+	<!--       </control> -->
+        <!-- </setting> -->
+      </group>
+	</category>
+  </section>
+</settings>

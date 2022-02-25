@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.kekkisear" name="kekkisear" version="1.0.1" provider-name="You">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+	<import addon="script.module.pyxbmct" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <!-- Optional child element contains a whitespace separated list of one of the following keywords: image, video, audio, and/or executable -->
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Your add-on's summary</summary>
+    <description lang="en_GB">Your add-on's description</description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <language>en</language> <!-- the language of the videos or other content the plugin provides, may be omitted in case the addon does not provide any content -->
+    <platform>all</platform>
+    <license>BSD 3 clause license</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=xxxx</forum> <!-- may be omitted  -->
+    <website>https://github.com/evilwan/script.kekkisear</website> <!-- the url of the website that contains the videos (or the official website of your plugin). May be omitted.  -->
+    <email>you@youremail.com</email> <!-- may be omitted  -->
+    <source>https://github.com/evilwan/script.kekkisear</source>
+    <news>v1.0.1 (25/02/2022)
+      [new] first public release
+      [fix] nothing yet
+    </news>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+        <banner></banner> <!-- optional -->
+        <clearlogo></clearlogo> <!-- optional  -->
+        <screenshot></screenshot> <!-- optional, max 10  -->
+    </assets>
+  </extension>
+</addon>
