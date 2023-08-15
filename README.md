@@ -1,4 +1,10 @@
 # Kodi addon for reading books in EPUB format
+
+## Notice
+
+Moved to [Codeberg]([https://codeberg.org/evilwan/script.kekkisear) because of policy changes at Github (see
+[Github notice](https://github.blog/2023-03-09-raising-the-bar-for-software-security-github-2fa-begins-march-13) )
+
 ## Introduction
 Reading ebooks on Kodi looked like a logical thing to do ... but strangely enough no readily available addons exist to make this possible. Googling around shows that, at one time, there was in fact an addon for doing just that, but the addon is no longer maintained and does not even work on recent Kodi versions.
 
